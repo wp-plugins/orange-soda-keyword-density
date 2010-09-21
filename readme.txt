@@ -4,7 +4,7 @@ Donate link: http://www.orangesoda.com/
 Tags: keywords, seo, online marketing, internet marketing, search engine optimization
 Requires at least: 2.1
 Tested up to: 3.0.1
-Stable tag: "trunk"
+Stable tag: 1.0
 
 Displays top 6 keywords for a post/page along with the density of each word.
 
