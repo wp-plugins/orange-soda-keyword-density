@@ -6,11 +6,11 @@ Requires at least: 2.1
 Tested up to: 3.0.1
 Stable tag: 1.1
 
-Displays top 6 keywords for a post/page along with the density of each word.
+Plugin from OrangeSoda that displays top 6 keywords for a post/page along with the density of each word.
 
 == Description ==
 
-Adds a box to posts and pages that shows the top 6 keywords from that post/page. Keyword density on posts and pages helps with search engine optimization and this tool will display the top words and their density. There is also a search box. If a word is not on the list, you can search for it and find the density of that word. You can also search for phrases. 
+This is a plugin from OrangeSoda written by David Godfrey. The Plugin adds a box to posts and pages that shows the top 6 keywords from that post/page. Keyword density on posts and pages helps with search engine optimization and this tool will display the top words and their density. There is also a search box. If a word is not on the list, you can search for it and find the density of that word. You can also search for phrases. 
 
 == Installation ==
 
@@ -45,4 +45,4 @@ Sorry everyone! This is my first plugin. I had the directory wrong when I added 
 == Upgrade Notice ==
 
 = 1.1 =
-The first release has broken links. Upgrade to 1.1 for the links to be fixed. This update is necessary for the tool to work. I apologize for the release mistake. 
+The first release has broken links. Upgrade to 1.1 for the links to be fixed. This update is necessary for the tool to work. I apologize for the release mistake. s
