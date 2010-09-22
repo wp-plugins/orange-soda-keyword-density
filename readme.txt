@@ -4,7 +4,7 @@ Donate link: http://www.orangesoda.com/
 Tags: keywords, seo, online marketing, internet marketing, search engine optimization
 Requires at least: 2.1
 Tested up to: 3.0.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 Displays top 6 keywords for a post/page along with the density of each word.
 
@@ -32,12 +32,13 @@ There is a word exclusion list, but it is difficult getting all the words that s
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1.png` (or jpg, jpeg, gif)
-2. This is the second screen shot
 
 == Changelog ==
 
 = 1.0 =
 *First Release
+
+=1.1 = 
+Sorry everyone! This is my first plugin. I had the directory wrong when I added it to the Wordpress SVN.
+* Fixed broken links that disabled the tool
 
