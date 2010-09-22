@@ -31,7 +31,7 @@ Because wordpress uses Iframes to update post/pages, it is difficult to get the 
 There is a word exclusion list, but it is difficult getting all the words that shouldn't be counted in the list. NOTE: Future release should have admin menu to add custom exclusion words...!
 
 == Screenshots ==
-
+1. This is a screenshot of the OrangeSoda Keyword Density Plugin.
 
 == Changelog ==
 
@@ -42,3 +42,7 @@ There is a word exclusion list, but it is difficult getting all the words that s
 Sorry everyone! This is my first plugin. I had the directory wrong when I added it to the Wordpress SVN.
 * Fixed broken links that disabled the tool
 
+== Upgrade Notice ==
+
+= 1.1 =
+The first release has broken links. Upgrade to 1.1 for the links to be fixed. This update is necessary for the tool to work. I apologize for the release mistake. 
