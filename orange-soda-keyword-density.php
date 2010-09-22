@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Orange Soda Keyword Density
+Plugin Name: OrangeSoda Keyword Density
 Plugin URI: http://orangesoda.com
 Description: Displays top 6 keywords for a post/page along with the density of each word.
 Version: 1.0.0
