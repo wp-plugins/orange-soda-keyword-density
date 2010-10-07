@@ -2,16 +2,15 @@
 /*
 Plugin Name: OrangeSoda Keyword Density
 Plugin URI: http://orangesoda.com
-Description: Displays top 6 keywords for a post/page along with the density of each word.
-Version: 1.1.0
+Description: Displays top 6 keywords for a post/page along with the density of each word. You can also search for a word or phrase to find its density. Made by OrangeSoda.
+Version: 1.2
 Author: OrangeSoda
 Author URI: http://orangesoda.com
 */
 
-//Creates Custom Fields for choosing a background by page
 $meta_boxes[] = array(
 	'id' => 'os-bkg-box',
-	'title' => 'OrangeSoda Keywords',
+	'title' => 'OrangeSoda Keyword Density',
 	'pages' => array('post', 'page'),
 	'context' => 'side',
 	'priority' => 'low',
@@ -87,7 +86,19 @@ class My_meta_box {
 
 			switch ($field['type']) {
 				case 'osKeyword':
-					echo '<img style="width: 260px;" src="../wp-content/plugins/orange-soda-keyword-density/images/logo.png" alt="OrangeSoda - Internet Marketing with Fizz" /><br /><div id="os_results"></div><br /><label>Find the density of a word or phrase</label><input type="text" id="orangeSoda_search_phrase" /><button id="orangeSoda_search_button" type="button">Search</button><br /><br /><div id="orange_soda_search_density"></div><div>To update the word count, save the post/page.</div><div style="margin-top: 15px;"><a style="color: orange;" href="http://www.orangesoda.com">Click here for more information, and more SEO tips and tricks.</a></div><div id="os_word_counter" style="display:none"></div>';
+					echo '<input type="text" id="orangeSoda_search_phrase" value="Keyword" style="color: gray" /><button id="orangeSoda_search_button" type="button">Search</button>
+					<div id="orange_soda_search_density"></div>
+					<div id="os_results"></div>
+					<br />
+					<div>To update the word count, save the post/page.</div>
+					<div style="margin-top: 5px;"><div style="width:110px; float:left;"><a style="color: orange;" href="http://www.orangesoda.com"><br />Learn more about internet marketing</a></div><a href="http://www.orangesoda.com" style="border:none; outline: none;"><img style="width: 150px; border:none;" src="../wp-content/plugins/orange-soda-keyword-density/images/logo.png" alt="OrangeSoda - Internet Marketing with Fizz" /></a></div><div id="os_word_counter" style="display:none; clear:both;"></div>
+					<script type="text/javascript" src="../wp-content/plugins/orange-soda-keyword-density/js/jquery.wordstats.js"></script>
+					<script type="text/javascript" src="../wp-content/plugins/orange-soda-keyword-density/js/jquery.wordstat.en.js"></script> 
+					<script type="text/javascript" src="../wp-content/plugins/orange-soda-keyword-density/js/keywords.js"></script> 
+					<style type="text/css">
+						.orangesoda_word_table tr th { text-align: left; font-size: 14px; padding-bottom: 5px; }
+					</style>
+					';
 					break;
 			}
 		}
@@ -134,22 +145,4 @@ class My_meta_box {
 		}
 	}
 }
-
-// We need some CSS to position the paragraph
-function os_scripts() {
-
-	echo "
-		<script type=\"text/javascript\" src=\"../wp-content/plugins/orange-soda-keyword-density/js/jquery.wordstats.js\"></script> <!-- core code -->
-		<script type=\"text/javascript\" src=\"../wp-content/plugins/orange-soda-keyword-density/js/jquery.wordstat.en.js\"></script> <!-- English stop words -->
-		<script type=\"text/javascript\" src=\"../wp-content/plugins/orange-soda-keyword-density/js/keywords.js\"></script> 
-		<style type=\"text/css\">
-			.orangesoda_word_table tr th { text-align: left; font-size: 14px; padding-bottom: 5px; }
-		</style>
-
-	";
-}
-
-add_action('admin_footer', 'os_scripts');
-
-
 ?>
