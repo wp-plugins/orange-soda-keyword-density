@@ -1,4 +1,4 @@
-jQuery.fn.highlight = function (pat) {
+jQuery.fn.highlight = function (pat) { 
     function innerHighlight(node, pat) {
         var skip = 0;
         if (node.nodeType == 3) {
